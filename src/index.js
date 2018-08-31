@@ -1,6 +1,10 @@
 // import _ from 'lodash';
 import { cube } from './math.js';
 
+if (process.env.NODE_EVN !== 'production') {
+  console.log('Looks like we are in development mode!');
+}
+
 function component() {
   var element = document.createElement('pre');
 
